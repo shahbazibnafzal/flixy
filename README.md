@@ -114,7 +114,7 @@ The chatbot can be extended to integrate more features like:
     - Button
     - Text Group
 - Key trade off is to use server side rendering (SSR) for better SEO of the landing page with enhanced security instead of a single page application (SPA) that could do faster client side routing in the browser but poor SEO and less security that could expose secret api key.
-
+- Took inspiration from the Flix design system.
 
 ## Disclaimer
 
