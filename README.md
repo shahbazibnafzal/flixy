@@ -24,7 +24,7 @@ The page uses server side rendering (SSR) for better SEO and inlcudes a fully re
 
 ### AI Integration
 
-- **[Vercel AI SDK](https://vercel.com/docs/ai/vercel-ai-sdk)**
+- **[Vercel AI SDK](https://sdk.vercel.ai/docs/introduction)**
 
 ### Testing
 
@@ -102,6 +102,7 @@ The chatbot can be extended to integrate more features like:
 - Adding scroll to bottom button to let the user scroll to bottom if they have scrolled up to read old messages.
 - Preventing auto scroll on new message stream if user has manually scrolled up for reading previous messages.
 - If the user closes the chat window while the message is streaming, there should be a notification on the floating chat button when the message is completely streamed.
+
 ---
 
 ## Disclaimer
