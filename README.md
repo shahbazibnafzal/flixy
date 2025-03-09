@@ -1,6 +1,6 @@
 # Flix Customer Support Landing Page
 
-Live URL: [Click here to preview the the website](https://flixy-sk.vercel.app/)
+Live URL: [Click here to preview the website](https://flixy-sk.vercel.app/)
 
 ## Overview
 
