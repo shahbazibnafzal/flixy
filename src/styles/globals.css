@@ -49,6 +49,8 @@
 }
 
 @layer {
+  /* Customizing the scrollbar style */
+
   .slick-scrollbar::-webkit-scrollbar-track {
     @apply bg-background-primary;
   }
