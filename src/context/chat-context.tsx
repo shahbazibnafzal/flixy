@@ -27,11 +27,13 @@ export const ChatContext = createContext<ChatContextType>({
     return;
   },
 });
+
 const initialAssistantMessage: Message = {
   id: uuid(),
   content: chatbotContent.welcomeMessage,
   role: "assistant",
 };
+
 export function ChatProvider({ children }: { children: React.ReactNode }) {
   const [isChatOpen, setisChatOpen] = useState(false);
 
@@ -45,6 +47,7 @@ export function ChatProvider({ children }: { children: React.ReactNode }) {
   } = useChat({
     initialMessages: [{ ...initialAssistantMessage }],
     onError: (_) => {
+      // Show an error message to the user
       toast.error(chatbotContent.errorMessage, {
         containerId: "toast-chat-container",
       });
