@@ -105,6 +105,17 @@ The chatbot can be extended to integrate more features like:
 
 ---
 
+## Key Decisions
+
+- Prioritized writing test cases for the core features since they are the most interactive part and core parts of the website such as:
+    - FAQ
+    - Chat Window (Chat Header, Chat Container, and Prompt Form)
+- Also added unit test cases for for essential resuable component such as:
+    - Button
+    - Text Group
+- Key trade off is to use server side rendering (SSR) for better SEO of the landing page with enhanced security instead of a single page application (SPA) that could do faster client side routing in the browser but poor SEO and less security that could expose secret api key.
+
+
 ## Disclaimer
 
 This project is not for commercial purpose and it is not meant to infringe on any copyrights or intellectual property.
