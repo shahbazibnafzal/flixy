@@ -94,14 +94,14 @@ pnpm build
 The AI chatbot is powered by the **Vercel AI SDK**, to receive streaming response from Open AI. The chatbot UI consists of:
 
 - **Chat Header**: Displays chatbot name and controls.
-- **Chat Container**: Shows conversation history.
+- **Chat Container**: Shows the conversation.
 - **Prompt Form**: Allows users to send messages.
 
 The chatbot can be extended to integrate more features like:
 
 - Adding scroll to bottom button to let the user scroll to bottom if they have scrolled up to read old messages.
 - Preventing auto scroll on new message stream if user has manually scrolled up for reading previous messages.
-
+- If the user closes the chat window while the message is streaming, there should be a notification on the floating chat button when the message is completely streamed.
 ---
 
 ## Disclaimer
