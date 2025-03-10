@@ -7,7 +7,7 @@ Live URL: [Click here to preview the website](https://flixy-sk.vercel.app/)
 This project is a simulation of a customer support landing page with an AI chatbot assistant integrated to the page.
 The page uses server side rendering (SSR) for better SEO and inlcudes a fully responsive and accessible layout with sections such as:
 
-- **Navbar**: A navigation bar for easy access to different sections. (The links are )
+- **Navbar**: A navigation bar for easy access to different sections. (The links are just placeholders as of now)
 - **Hero**: A welcoming hero section introducing Flixy - AI assiatant with a CTA (Call to action)
 - **Features**: A sections showcasing key features.
 - **FAQs**: Commonly asked questions and answer.
