@@ -3,8 +3,17 @@ import PromptForm from "./PromptForm";
 import { ToastContainer } from "react-toastify";
 import ChatHeader from "./ChatHeader";
 import ChatContainer from "./ChatContainer";
+import { useScroll } from "~/hooks/useScroll";
+import { IoIosArrowDown } from "react-icons/io";
+import Button from "../Button";
 
 const ChatWindow = () => {
+  const {
+    messageEndRef,
+    chatContainerRef,
+    scrollToBottom,
+    showScrollToBottom,
+  } = useScroll();
   return (
     <div
       className={cn(
@@ -20,12 +29,27 @@ const ChatWindow = () => {
       )}
     >
       <ChatHeader />
-      <ChatContainer />
+      <ChatContainer
+        messageEndRef={messageEndRef}
+        chatContainerRef={chatContainerRef}
+      />
       <PromptForm />
       <ToastContainer
         containerId="toast-chat-container"
         className={"absolute left-1/2 top-16 -translate-x-1/2"}
       />
+      <Button
+        onClick={() => scrollToBottom("smooth")}
+        variant="secondary"
+        rounded={true}
+        className={cn(
+          "-translate-1/2 absolute bottom-20 left-1/2",
+          "bg-background-secondary p-2 shadow-lg hover:bg-highlight",
+          !showScrollToBottom && "hidden",
+        )}
+      >
+        <IoIosArrowDown />
+      </Button>
     </div>
   );
 };
