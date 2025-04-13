@@ -23,7 +23,7 @@ const FormattedMarkdown = ({ children }: { children: string }) => {
             <pre
               className={cn(
                 "w-full overflow-x-auto p-2",
-                "text-content-light bg-gray-500",
+                "bg-background-tertiary text-content-light",
                 "rounded-lg text-sm",
               )}
             >

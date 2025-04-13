@@ -8,6 +8,7 @@ export default {
         "primary": "var(--color-brand-primary)",
         "background-primary": "var(--color-bg-primary)",
         "background-secondary": "var(--color-bg-secondary)",
+        "background-tertiary": "var(--color-bg-tertiary)",
         "highlight": "var(--color-highlight)",
         "content-primary": "var(--color-content-primary)",
         "content-secondary": "var(--color-content-secondary)",

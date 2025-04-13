@@ -1,13 +1,18 @@
 import { cn } from "~/lib/utils";
 import AssitantMessage from "./AssitantMessage";
 import { useChatActions } from "~/hooks/useChatActions";
-import { useScroll } from "~/hooks/useScroll";
 import TypingAnimation from "./TypingAnimation";
 import UserMessage from "./UserMessage";
+import { RefObject } from "react";
 
-const ChatContainer = () => {
+const ChatContainer = ({
+  messageEndRef,
+  chatContainerRef,
+}: {
+  messageEndRef: RefObject<HTMLDivElement>;
+  chatContainerRef: RefObject<HTMLDivElement>;
+}) => {
   const { messages, status } = useChatActions();
-  const { messageEndRef, chatContainerRef } = useScroll();
 
   return (
     <div
